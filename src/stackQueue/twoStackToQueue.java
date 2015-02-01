@@ -14,6 +14,10 @@ public class twoStackToQueue {
  				s2.push(s1.pop());
  		return s2.pop();
  	}
+ 	public boolean isEmpty(){
+ 		return s1.isEmpty()&&s2.isEmpty();
+ 	}
+ 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		twoStackToQueue q = new twoStackToQueue();
