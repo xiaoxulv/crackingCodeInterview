@@ -19,6 +19,7 @@ public class next {
 			copy >>= 1;
 		}
 		int p = c1+c0;
+		//return n + (1<<c0) + (1<<(c1-1)) - 1;
 		if(p == 0 || p == 31)//1..10..0 can't be bigger
 			return -1;
 		n |= (1<<p); //flip 
@@ -43,6 +44,7 @@ public class next {
 			copy>>=1;
 		}
 		int p = c0+c1;
+		//return n - (1<<c1) - (1<<(c0-1)) + 1;
 		n &= (~0)<<(p+1); //clear, flip as well
 		int mask = (1<<(c1+1))-1;//add 1
 		n |= mask<<(c0-1);
