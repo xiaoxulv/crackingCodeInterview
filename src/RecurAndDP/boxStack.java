@@ -21,7 +21,7 @@ public class boxStack {
 		}
 		if (max_stack == null) max_stack = new ArrayList<Box>();
 		if (bottom != null) max_stack.add(0, bottom);
-			s.put(bottom, max_stack);
+		s.put(bottom, max_stack);
 	
 		return (ArrayList<Box>)max_stack.clone();
 	}
